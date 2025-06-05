@@ -32,19 +32,18 @@ Timeouts and error handling: Adjust WebDriverWait times and error catching as ne
 # Prerequisites
 Python 3.x
 
-Selenium (pip install selenium)
+Selenium (```pip install selenium```)
 
 Chrome WebDriver (compatible with your installed Chrome version)
-Download here
 
 # Usage
-Clone this repository or copy the script.
+* Clone this repository or copy the script.
 
-Update the items list with your product codes.
+* Update the items list with your product codes.
 
-Adjust URLs and selectors if you want to scrape other sites.
+* Adjust URLs and selectors if you want to scrape other sites.
 
-Run the script:
+* Run the script:
 ```python price_scraper.py```
 
 ## Edit
