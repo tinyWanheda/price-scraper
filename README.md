@@ -45,13 +45,13 @@ Update the items list with your product codes.
 Adjust URLs and selectors if you want to scrape other sites.
 
 Run the script:
-python price_scraper.py
+```python price_scraper.py```
 
-Edit
-items = [
+## Edit
+```items = [
     "SY2000-0R4G-S2",
     "SY5000-18G/22P-4",
-    // Add more product codes here
+    #Add more product codes here
 ]
 
-//Update URLs and selectors inside the script accordingly
+#Update URLs and selectors inside the script accordingly```
