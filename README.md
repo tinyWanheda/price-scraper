@@ -47,7 +47,8 @@ Chrome WebDriver (compatible with your installed Chrome version)
 ```python price_scraper.py```
 
 ## Edit
-```items = [
+```
+items = [
     "SY2000-0R4G-S2",
     "SY5000-18G/22P-4",
     #Add more product codes here
