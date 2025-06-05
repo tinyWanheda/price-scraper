@@ -1,4 +1,4 @@
-#Price Scraper
+# Price Scraper
 A simple Python script using Selenium to scrape product prices from multiple e-commerce websites.
 Designed to be easily customizable for other websites and price element selectors.
 
