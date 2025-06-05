@@ -54,4 +54,5 @@ items = [
     #Add more product codes here
 ]
 
-#Update URLs and selectors inside the script accordingly```
+#Update URLs and selectors inside the script accordingly
+```
