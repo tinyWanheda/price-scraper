@@ -1,58 +1,68 @@
-# Price Scraper
-A simple Python script using Selenium to scrape product prices from multiple e-commerce websites.
-Designed to be easily customizable for other websites and price element selectors.
+# 🔍 Selenium Web Scraper for Partineh & Asamkala
 
-# Features
-Scrapes prices from partineh.com and asamkala.com by default.
+This Python script uses Selenium to search for a list of product model numbers on two Iranian e-commerce websites: [Partineh](https://partineh.com) and [Asamkala](https://asamkala.com). It attempts to find each product and extract its price if available, saving the results in a `result.txt` file.
 
-Automatically falls back to the second site if the product or price is not found on the first.
+---
 
-Uses Selenium with headless Chrome for browser automation.
+## 🚀 Features
 
-Easy to customize for any other websites by updating URLs and element selectors.
+- Searches for a list of items on both websites
+- Scrapes price information when available
+- Prioritizes `Partineh` and falls back to `Asamkala` if not found
+- Outputs human-readable results to the console and a file
+- Headless Chrome browser for silent execution
 
-# How it works
-The script takes a list of product codes (item IDs).
+---
 
-It searches the first website (e.g., partineh.com) for each product and tries to find the price using a specific HTML element class or ID.
+## 📦 Requirements
 
-If the price or product is not found, it tries a second website (e.g., asamkala.com).
+- Python 3.7+
+- Google Chrome
+- ChromeDriver (must match your Chrome version)
 
-Prints the product code and the found price (or a "not found" message).
+Install dependencies using `pip`:
 
-# Customization
-You can customize this script to work with any website by updating:
-
-Search URLs: Change the base URLs in the script to match your target websites’ search query format.
-
-Price element selectors: Update the Selenium selectors (e.g., By.CLASS_NAME, By.ID) to target the correct HTML elements where prices appear on your websites.
-
-Timeouts and error handling: Adjust WebDriverWait times and error catching as needed for site speed and reliability.
-
-# Prerequisites
-Python 3.x
-
-Selenium (```pip install selenium```)
-
-Chrome WebDriver (compatible with your installed Chrome version)
-
-# Usage
-* Clone this repository or copy the script.
-
-* Update the items list with your product codes.
-
-* Adjust URLs and selectors if you want to scrape other sites.
-
-* Run the script:
-```python price_scraper.py```
-
-## Edit
+```bash
+pip install selenium
 ```
-items = [
-    "SY2000-0R4G-S2",
-    "SY5000-18G/22P-4",
-    #Add more product codes here
-]
+## 🔧 Setup
+Make sure Google Chrome is installed.
 
-#Update URLs and selectors inside the script accordingly
+Download the correct version of ChromeDriver and make sure it’s in your system PATH.
+
+Clone this repository or copy the script.
+
+Add or update the list of item codes in the items list inside the script if needed.
+
+## 🖥️ Usage
+Run the script:
+
+bash
+Copy
+Edit
+python your_script_name.py
+This will:
+
+Search for each item on Partineh
+
+If not found, try Asamkala
+
+Print results to the console
+
+Save all results in result.txt
+## 📄 Output Format
+Each line in the output looks like:
+
 ```
+SY2000-0R4G-S2: 1,230,000 تومان (Found on Partineh)
+SY2000-0R7G-S2: ❌ Not found on Partineh or Asamkala
+```
+## 📁 Output File
+A file named result.txt will be created in the same directory, containing the final results.
+
+## 🛑 Notes
+This script runs in headless mode (no browser window pops up).
+
+Page structure of Partineh or Asamkala may change, which could break the scraper.
+
+Some items may take a few seconds due to network delays.
