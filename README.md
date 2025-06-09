@@ -25,7 +25,7 @@ Install dependencies using `pip`:
 ```bash
 pip install selenium
 ```
----
+
 ## 🔧 Setup
 Make sure Google Chrome is installed.
 
@@ -34,7 +34,7 @@ Download the correct version of ChromeDriver and make sure it’s in your system
 Clone this repository or copy the script.
 
 Add or update the list of item codes in the items list inside the script if needed.
----
+
 ## 🖥️ Usage
 Run the script:
 
