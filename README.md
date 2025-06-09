@@ -51,7 +51,7 @@ If not found, try Asamkala
 Print results to the console
 
 Save all results in result.txt
----
+
 ## 📄 Output Format
 Each line in the output looks like:
 
@@ -59,10 +59,10 @@ Each line in the output looks like:
 SY2000-0R4G-S2: 1,230,000 تومان (Found on Partineh)
 SY2000-0R7G-S2: ❌ Not found on Partineh or Asamkala
 ```
----
+
 ## 📁 Output File
 A file named result.txt will be created in the same directory, containing the final results.
----
+
 ## 🛑 Notes
 This script runs in headless mode (no browser window pops up).
 
